@@ -28,13 +28,16 @@ namespace MoodAnalyzer
                 }
 
             }
-            catch (NullReferenceException ex)
+            catch
             {
                 Console.WriteLine("You have provided null reference!");
-                Console.WriteLine(ex.Message);
+                //Console.WriteLine(ex.Message);
+                return "Happy";
 
             }
             return default(String);
         }
+
+
     }
 }

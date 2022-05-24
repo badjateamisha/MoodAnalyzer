@@ -11,7 +11,7 @@ namespace MoodAnalyzer
         public string AnalyseMoodMethod(string message)
         {
             string message1 = "Sad";
-            if (message.ToLower().Contains(message1.ToLower()))
+            if (message.ToUpper().Contains(message1.ToUpper()))
             {
                 return message1;
             }
